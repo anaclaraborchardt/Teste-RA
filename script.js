@@ -1,7 +1,7 @@
 
 // const targetPergunta = document.getElementById("targetPergunta");
-const targetEsquerda = document.getElementById("targetEsquerda");
-const targetDireita = document.getElementById("targetDireita");
+const targetEsquerda = document.querySelector("#targetEsquerda");
+const targetDireita = document.querySelector("#targetDireita");
 
 const booleanPergunta = false;
 const booleanEsquerda = false;

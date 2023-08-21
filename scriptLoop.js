@@ -12,7 +12,7 @@ do{
         fimJogo = true;
     } else if(lista[1] == true && lista[2] ==true){
          const pergunta = listaPerguntas[0];
-        opcaoLeft.innerHTML(pergunta.opcoes[0].enunciado);
-        opcaoRight.innerHTML(pergunta.opcoes[1].enunciado);
+        opcaoLeft.innerText(pergunta.opcoes[0].enunciado);
+        opcaoRight.innerText(pergunta.opcoes[1].enunciado);
     }
 }while(!fimJogo);

@@ -31,12 +31,11 @@ document.getElementById("targetDireita").addEventListener("targetLost", (e) => {
     booleanDireita = false;
 });
 
-if (booleanPergunta && booleanEsquerda && booleanDireita) {
+if (booleanEsquerda && booleanDireita) {
     //lógica pergunta
     alert("Escaneou");
 }
 else {
-    
     alert("Você perdeu algum de seus Targets. Para que o jogo volte a funcionar escaneie os três itens!");
 }
 

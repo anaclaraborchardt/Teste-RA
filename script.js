@@ -16,20 +16,20 @@ const booleanDireita = false;
 // });
 
 //TARGET ESQUERDA
-targetEsquerda.addEventListener("targetFound", (e) => {
+targetEsquerda.addEventListener("targetFound", event => {
     booleanEsquerda = true;
     alert("Esquerda");
 });
-targetEsquerda.addEventListener("targetLost", (e) => {
+targetEsquerda.addEventListener("targetLost", event => {
     booleanEsquerda = false;
 });
 
 //TARGET DIREITA
-targetDireita.addEventListener("targetFound", (e) => {
+targetDireita.addEventListener("targetFound", event => {
     booleanDireita = true;
     alert("Direita");
 });
-targetDireita.addEventListener("targetLost", (e) => {
+targetDireita.addEventListener("targetLost", event => {
     booleanDireita = false;
 });
 
@@ -47,6 +47,9 @@ function setLocalStorageTheLastQuestion(index){
 
 function setLocalStorageTheQuestionList(index){
     localStorage.setItem("questionList", JSON.stringify(perguntasTecnologicas));
+}
+function setLocalStorageTheGameIsStarted(){
+    localStorage.setItem("gameStatus", true);
 }
 
 

@@ -59,5 +59,4 @@ targetDireita.addEventListener("click", event => {
 
 
 
-let lista = [perguntasTecnologicas, booleanEsquerda, booleanDireita];
-export default lista;
+export let lista = [perguntasTecnologicas, booleanEsquerda, booleanDireita];

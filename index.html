@@ -1,32 +1,38 @@
-
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/band.mind; maxTrack: 2" 
-    color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <!-- OPCAO ESQUERDA -->
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane id="targetEsquerda" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-      </a-entity>
+<body>
+  <a-scene
+    mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/band.mind; maxTrack: 2"
+    color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false">
 
-      <!-- OPCAO DIREITA -->
-      <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane id="targetDireita" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-      </a-entity>
-    </a-scene>
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-    <dialog class="aviso">
+    <!-- OPCAO ESQUERDA -->
+    <a-entity mindar-image-target="targetIndex: 0">
+      <a-plane id="targetEsquerda" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+    </a-entity>
+
+    <!-- OPCAO DIREITA -->
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-plane id="targetDireita" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+    </a-entity>
+  </a-scene>
+
+  <div class="aviso">
+    <dialog>
       Escaneie a tela para começar a Jogar!!!
     </dialog>
+  </div>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>

@@ -18,6 +18,7 @@ const booleanDireita = false;
 //TARGET ESQUERDA
 document.getElementById("targetEsquerda").addEventListener("targetFound", (e) => {
     booleanEsquerda = true;
+    alert("Esquerda");
 });
 document.getElementById("targetEsquerda").addEventListener("targetLost", (e) => {
     booleanEsquerda = false;
@@ -26,6 +27,7 @@ document.getElementById("targetEsquerda").addEventListener("targetLost", (e) => 
 //TARGET DIREITA
 document.getElementById("targetDireita").addEventListener("targetFound", (e) => {
     booleanDireita = true;
+    alert("Direita");
 });
 document.getElementById("targetDireita").addEventListener("targetLost", (e) => {
     booleanDireita = false;
@@ -38,6 +40,11 @@ if (booleanEsquerda && booleanDireita) {
 else {
     alert("Você perdeu algum de seus Targets. Para que o jogo volte a funcionar escaneie os três itens!");
 }
+
+function setLocalStorageTheLastQuestion(index){
+    localStorage.setItem("lastQuestion", JSON.stringify(perguntasTecnologicas[index]));
+}
+
 
 const perguntasTecnologicas = [
     {

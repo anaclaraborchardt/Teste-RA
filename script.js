@@ -53,7 +53,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "SMTP"
     },
     {
         pergunta: "O que significa a sigla 'URL'?",
@@ -67,7 +66,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: false
             }
         ],
-        resposta: "Universal Resource Locator"
     },
     {
         pergunta: "Qual linguagem de programação é frequentemente usada para desenvolvimento web?",
@@ -81,7 +79,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "HTML"
     },
     {
         pergunta: "O que é um firewall em tecnologia?",
@@ -95,7 +92,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Um sistema de segurança para proteger redes"
     },
     {
         pergunta: "O que é a 'nuvem' em computação?",
@@ -109,7 +105,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Um serviço de armazenamento online"
     },
     {
         pergunta: "Qual tag é utilizada para cabeçalho de navegação?",
@@ -123,7 +118,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: false
             }
         ],
-        resposta: "HTML"
     },
     {
         pergunta: "O que é um 'cookie' em termos de tecnologia da informação?",
@@ -137,7 +131,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Um pequeno arquivo de dados armazenado no navegador"
     },
     {
         pergunta: "O que é um 'phishing'?",
@@ -151,7 +144,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Uma tentativa de enganar pessoas para obter informações confidenciais"
     },
     {
         pergunta: "Qual é a função principal de um sistema operacional?",
@@ -165,7 +157,6 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Gerenciar recursos do computador"
     },
     {
         pergunta: "O que significa 'IoT' em tecnologia?",
@@ -179,6 +170,5 @@ const perguntasTecnologicas = [
                 respostaCorreta: true
             }
         ],
-        resposta: "Internet of Things"
     }
 ];

@@ -1,5 +1,5 @@
 .aviso{
-    display: flex;
+    position: absolute;
     width: 100vw;
     height: 10vh;
     justify-content: center;

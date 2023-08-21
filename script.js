@@ -1,5 +1,5 @@
 
-const targetPergunta = document.getElementById("targetPergunta");
+// const targetPergunta = document.getElementById("targetPergunta");
 const targetEsquerda = document.getElementById("targetEsquerda");
 const targetDireita = document.getElementById("targetDireita");
 
@@ -8,12 +8,12 @@ const booleanEsquerda = false;
 const booleanDireita = false;
 
 //TARGET PERGUNTA
-document.getElementById("targetPergunta").addEventListener("targetFound", (e) => {
-    booleanPergunta = true;
-});
-document.getElementById("targetPergunta").addEventListener("targetLost", (e) => {
-    alert("você perdeu o Messi");
-});
+// document.getElementById("targetPergunta").addEventListener("targetFound", (e) => {
+//     booleanPergunta = true;
+// });
+// document.getElementById("targetPergunta").addEventListener("targetLost", (e) => {
+//     alert("você perdeu o Messi");
+// });
 
 //TARGET ESQUERDA
 document.getElementById("targetEsquerda").addEventListener("targetFound", (e) => {

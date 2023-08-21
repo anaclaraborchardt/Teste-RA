@@ -1,7 +1,7 @@
 .aviso{
     position: absolute;
-    width: 100vw;
-    height: 10vh;
+    width: 100px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     background-color: #f3f3f3;

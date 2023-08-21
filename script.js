@@ -16,20 +16,20 @@ const booleanDireita = false;
 // });
 
 //TARGET ESQUERDA
-document.getElementById("targetEsquerda").addEventListener("targetFound", (e) => {
+targetEsquerda.addEventListener("targetFound", (e) => {
     booleanEsquerda = true;
     alert("Esquerda");
 });
-document.getElementById("targetEsquerda").addEventListener("targetLost", (e) => {
+targetEsquerda.addEventListener("targetLost", (e) => {
     booleanEsquerda = false;
 });
 
 //TARGET DIREITA
-document.getElementById("targetDireita").addEventListener("targetFound", (e) => {
+targetDireita.addEventListener("targetFound", (e) => {
     booleanDireita = true;
     alert("Direita");
 });
-document.getElementById("targetDireita").addEventListener("targetLost", (e) => {
+targetDireita.addEventListener("targetLost", (e) => {
     booleanDireita = false;
 });
 

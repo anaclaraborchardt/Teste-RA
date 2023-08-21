@@ -33,7 +33,7 @@ targetDireita.addEventListener("targetLost", (e) => {
     booleanDireita = false;
 });
 
-if (booleanEsquerda && booleanDireita) {
+if (booleanEsquerda==true && booleanDireita==true) {
     //lógica pergunta
     alert("Escaneou");
 }
@@ -43,6 +43,10 @@ else {
 
 function setLocalStorageTheLastQuestion(index){
     localStorage.setItem("lastQuestion", JSON.stringify(perguntasTecnologicas[index]));
+}
+
+function setLocalStorageTheQuestionList(index){
+    localStorage.setItem("questionList", JSON.stringify(perguntasTecnologicas));
 }
 
 

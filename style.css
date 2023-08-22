@@ -15,3 +15,7 @@
     color: #092C4C;
     text-align: center;
 }
+
+.hidden{
+    display: none;
+}

@@ -151,8 +151,7 @@ quadrado1.addEventListener('click', () => {
 });
 
 quadrado2.addEventListener('click', () => {
-  pontos++;
-  alert(`Click direita: ${pontos}`);
+  alert('Click direita');
 });
 
 

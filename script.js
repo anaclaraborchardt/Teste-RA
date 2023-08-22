@@ -137,7 +137,7 @@ const targetInicio = document.querySelector("#targetInicio");
 targetInicio.addEventListener("click", event => {
     alert("teste");
    setGameStart();
-   if(localStorage.getItem("gameIsStarted")){
+   if(localStorage.getItem("gameIsStarted") == true){
     targetInicio.classList.add('hidden');
    }
 });

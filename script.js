@@ -57,6 +57,20 @@ targetDireita.addEventListener("click", event => {
 // }
 
 
+let fimJogo = false;
+let opcaoLeft = document.getElementById("text-first-option");
+let opcaoRight = document.getElementById("text-second-option");
 
 
-export let lista = [perguntasTecnologicas, booleanEsquerda, booleanDireita];
+let listaPerguntas = lista[0];
+
+do{
+    if(perguntasTecnologicas.length == 0){
+        fimJogo = true;
+    } else if(booleanEsquerda && booleanDireita){
+         const pergunta = listaPerguntas[0];
+        opcaoLeft.innerText(pergunta.opcoes[0].enunciado);
+        opcaoRight.innerText(pergunta.opcoes[1].enunciado);
+    }
+}while(!fimJogo);
+

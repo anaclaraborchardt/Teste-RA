@@ -135,6 +135,8 @@ let listaPerguntas = [
 const targetInicio = document.getElementById("targetInicio");
 
 targetInicio.addEventListener("click", event => {
+    alert("teste");
+
    setGameStart();
    if(localStorage.getItem("gameIsStarted")){
     targetInicio.classList.add('hidden');

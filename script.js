@@ -608,6 +608,7 @@ const luckyBlock = document.querySelector('#luckyPlane');
 
 luckyBlock.addEventListener('click', () => {
     const gameIsStarted = localStorage.getItem("gameIsStarted");
+    alert('quiz')
     //VERIFICA SE O JOGO JÁ COMEÇOU
     if (gameIsStarted == null) {
         //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU

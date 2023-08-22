@@ -174,6 +174,11 @@ targetDireita.addEventListener("click", event => {
 
 
 
+  
+function setGameStart(){
+    localStorage.setItem("gameIsStarted", true);
+}
+
 
 // function setLocalStorageTheLastQuestion(index) {
 //   localStorage.setItem("lastQuestion", JSON.stringify(perguntasTecnologicas[index]));
@@ -192,14 +197,15 @@ let opcaoLeft = document.getElementById("text-first-option");
 let opcaoRight = document.getElementById("text-second-option");
 
 
-
-do{
-    if(perguntasTecnologicas.length == 0){
-        fimJogo = true;
-    } else if(booleanEsquerda && booleanDireita){
-         const pergunta = listaPerguntas[0];
-        opcaoLeft.innerText(pergunta.opcoes[0].enunciado);
-        opcaoRight.innerText(pergunta.opcoes[1].enunciado);
-    }
-}while(!fimJogo);
-
+if(localStorage.getItem("gameIsStarted")){
+    do{
+        if(perguntasTecnologicas.length == 0){
+            fimJogo = true;
+        } else if(booleanEsquerda && booleanDireita){
+            const pergunta = listaPerguntas[0];
+            opcaoLeft.innerText(pergunta.opcoes[0].enunciado);
+            opcaoRight.innerText(pergunta.opcoes[1].enunciado);
+        }
+    }while(!fimJogo);
+}
+    

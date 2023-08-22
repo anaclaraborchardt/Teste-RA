@@ -174,7 +174,7 @@ targetDireita.addEventListener("click", event => {
 
 
 
-  
+
 function setGameStart(){
     localStorage.setItem("gameIsStarted", true);
 }

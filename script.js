@@ -142,6 +142,18 @@ const targetInicio = document.querySelector("#targetInicio");
 //    }
 // });
 
+const quadrado1 = document.getElementById('quadrado1');
+const quadrado2 = document.getElementById('quadrado2');
+let pontos = 0;
+
+quadrado1.addEventListener('click', () => {
+  alert('Click esquerda');
+});
+
+quadrado2.addEventListener('click', () => {
+  pontos++;
+  alert(`Click direita: ${pontos}`);
+});
 
 
 

@@ -128,66 +128,552 @@ let listaPerguntas = [
                 respostaCorreta: true
             }
         ]
+    },
+    {
+        pergunta: "Qual protocolo é usado para transferência segura de arquivos?",
+        opcoes: [
+            {
+                enunciado: "FTP",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "SFTP",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a linguagem de programação usada para desenvolvimento de apps iOS?",
+        opcoes: [
+            {
+                enunciado: "Java",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Swift",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é SQL em tecnologia?",
+        opcoes: [
+            {
+                enunciado: "Uma linguagem de programação",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma linguagem para gerenciamento de bancos de dados",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que significa 'RAM' em computação?",
+        opcoes: [
+            {
+                enunciado: "Random Access Memory",
+                respostaCorreta: true
+            },
+            {
+                enunciado: "Read-Only Memory",
+                respostaCorreta: false
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a função do comando 'git commit'?",
+        opcoes: [
+            {
+                enunciado: "Enviar alterações para um repositório remoto",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Registrar alterações em um repositório local",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'bug' em programação?",
+        opcoes: [
+            {
+                enunciado: "Um recurso planejado",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um erro no código que causa comportamento indesejado",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a linguagem de marcação usada para estilizar a aparência de uma página web?",
+        opcoes: [
+            {
+                enunciado: "CSS",
+                respostaCorreta: true
+            },
+            {
+                enunciado: "JavaScript",
+                respostaCorreta: false
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'framework' de desenvolvimento?",
+        opcoes: [
+            {
+                enunciado: "Um tipo de computador especializado",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um conjunto de ferramentas e bibliotecas para facilitar o desenvolvimento",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a unidade básica de armazenamento de dados em um computador?",
+        opcoes: [
+            {
+                enunciado: "Byte",
+                respostaCorreta: true
+            },
+            {
+                enunciado: "Bit",
+                respostaCorreta: false
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'loop' em programação?",
+        opcoes: [
+            {
+                enunciado: "Um erro de sintaxe",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma estrutura que executa repetidamente um bloco de código",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é DNS?",
+        opcoes: [
+            {
+                enunciado: "Digital Network System",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Domain Name System",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'open source'?",
+        opcoes: [
+            {
+                enunciado: "Um software comercial",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Software com código-fonte aberto e disponível para uso/modificação",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é o sistema operacional desenvolvido pela Apple para seus computadores?",
+        opcoes: [
+            {
+                enunciado: "Windows",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "macOS",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'plugin' em termos de software?",
+        opcoes: [
+            {
+                enunciado: "Um dispositivo de hardware",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um componente de software que adiciona funcionalidades a um programa",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'cursor'?",
+        opcoes: [
+            {
+                enunciado: "Um tipo de teclado",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um indicador de posição na tela, controlado pelo mouse ou teclado",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'machine learning'?",
+        opcoes: [
+            {
+                enunciado: "Uma linguagem de programação",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um campo da inteligência artificial em que os sistemas aprendem com os dados",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é o componente do computador que executa as instruções de um programa?",
+        opcoes: [
+            {
+                enunciado: "Disco rígido",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Processador (CPU)",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'avatar' em termos de computação?",
+        opcoes: [
+            {
+                enunciado: "Um personagem virtual que representa um usuário",
+                respostaCorreta: true
+            },
+            {
+                enunciado: "Uma técnica de criptografia",
+                respostaCorreta: false
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a linguagem de programação usada para desenvolver aplicativos Android?",
+        opcoes: [
+            {
+                enunciado: "C++",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Java",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'repositório' em controle de versão?",
+        opcoes: [
+            {
+                enunciado: "Uma pasta no computador",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um local central para armazenar e gerenciar código-fonte",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a unidade de medida da velocidade de transmissão de dados?",
+        opcoes: [
+            {
+                enunciado: "Hertz",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Bits por segundo (bps)",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'HTML' em termos de desenvolvimento web?",
+        opcoes: [
+            {
+                enunciado: "Um formato de áudio",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma linguagem de marcação para criar páginas web",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'hackathon'?",
+        opcoes: [
+            {
+                enunciado: "Uma competição para cortar lenha",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um evento em que programadores colaboram intensivamente em projetos de software",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a função do comando 'git push'?",
+        opcoes: [
+            {
+                enunciado: "Trazer alterações de um repositório remoto para um local",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Enviar alterações de um repositório local para um remoto",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'loop infinito' em programação?",
+        opcoes: [
+            {
+                enunciado: "Um tipo de estrutura de dados",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um erro de lógica que faz um programa executar repetidamente sem parar",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'HTTPS'?",
+        opcoes: [
+            {
+                enunciado: "Hypertext Transfer Protocol Secure",
+                respostaCorreta: true
+            },
+            {
+                enunciado: "Hypertext Transfer Protocol Standard",
+                respostaCorreta: false
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'loop for' em programação?",
+        opcoes: [
+            {
+                enunciado: "Uma instrução condicional",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma estrutura de controle que repete um bloco de código um número definido de vezes",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'realidade aumentada'?",
+        opcoes: [
+            {
+                enunciado: "Um tipo de monitor",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma tecnologia que combina elementos virtuais com o ambiente real",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a linguagem de programação usada para criar scripts em páginas web?",
+        opcoes: [
+            {
+                enunciado: "Java",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "JavaScript",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'CSS' em desenvolvimento web?",
+        opcoes: [
+            {
+                enunciado: "Uma linguagem de programação",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Uma linguagem de estilização para formatar páginas web",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a função do comando 'npm'?",
+        opcoes: [
+            {
+                enunciado: "Gerenciar pacotes de software em projetos Python",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Gerenciar pacotes de software em projetos JavaScript",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é um 'data center'?",
+        opcoes: [
+            {
+                enunciado: "Um software de análise de dados",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um local físico que abriga servidores e equipamentos de rede",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'API'?",
+        opcoes: [
+            {
+                enunciado: "Application Protocol Interface",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Application Programming Interface",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "Qual é a linguagem de programação usada para desenvolver aplicativos Windows?",
+        opcoes: [
+            {
+                enunciado: "Python",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "C#",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'versionamento' de software?",
+        opcoes: [
+            {
+                enunciado: "O processo de otimização de código",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "O controle de alterações em um projeto de software ao longo do tempo",
+                respostaCorreta: true
+            }
+        ]
+    },
+    {
+        pergunta: "O que é 'JSON'?",
+        opcoes: [
+            {
+                enunciado: "Uma linguagem de marcação",
+                respostaCorreta: false
+            },
+            {
+                enunciado: "Um formato de intercâmbio de dados",
+                respostaCorreta: true
+            }
+        ]
     }
 ]
 
-// const targetPergunta = document.getElementById("targetPergunta");
-const targetInicio = document.querySelector("#targetInicio");
 
-// targetInicio.addEventListener("click", event => {
-//     alert("teste");
-//    setGameStart();
-//    if(localStorage.getItem("gameIsStarted") == true){
-//     targetInicio.classList.add('hidden');
-//    }
-// });
 
-const quadrado1 = document.getElementById('quadrado1');
-const quadrado2 = document.getElementById('quadrado2');
-let pontos = 0;
+const sectionQuestion = document.querySelector("#section-question");
 
-quadrado1.addEventListener('click', () => {
-  alert('Click esquerda');
+const luckyBlock = document.querySelector('#lucky');
+
+
+luckyBlock.addEventListener('click', () => {
+    const gameIsStarted = localStorage.getItem("gameIsStarted");
+    //VERIFICA SE O JOGO JÁ COMEÇOU
+    if (gameIsStarted == null) {
+        //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
+        setGameStart();
+    }
+    //SORTEIA O NÚMERO DE DENTRO DA LISTA
+    let numeroSorteado;
+    sorteiaNumero(() => {
+        if (listaPerguntas.length > 0) {
+            numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
+        }
+    });
+    //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
+    const perguntaSorteada = listaPerguntas[numeroSorteado];
+
+    //temos que pegar essas referências
+    const leftOption = document.querySelector("#left-option");
+    const rightOption = document.querySelector("#right-option");
+
+    //PRIMEIRO, VAMOS TIRAR A CLASSE HIDDEN DA MAIN SECTION
+    sectionQuestion.classList.remove('hidden');
+    //PRONTO< AGORA ela aparece na tela
+    const opcaoEsquerda = perguntaSorteada.opcoes[0].enunciado;
+    const opcaoDireita = perguntaSorteada.opcoes[1].enunciado;
+
+    let spanEsquerda = document.createElement('span');
+    let spanDireita = document.createElement('span');
+
+    spanEsquerda.innerHTML = opcaoEsquerda;
+    spanDireita.innerHTML = opcaoDireita;
+
+    leftOption.append(spanEsquerda);
+    rightOption.append(spanDireita);
+
+    setCurrentQuestion(perguntaSorteada);
 });
 
-quadrado2.addEventListener('click', () => {
-  alert('Click direita');
-});
+function questionAnswer(optionSide) {
+    const currentQuestion = localStorage.getItem("currentQuestion");
+    if ((currentQuestion.opcoes[0].respostaCorreta && optionSide === "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide === "right")) {
+        setPointsLocalStorage();
+    } else {
+        localStorage.setItem("points", 0);
+        alert("Você errou!");
+    }
+    sectionQuestion.classList.add("hidden");
+}
 
 
+function setPointsLocalStorage(){
+    const currentCount = localStorage.getItem("currentCount");
+    if(currentCount != null){
+        localStorage.setItem("currentCount" , parseInt(currentCount)+1);
+    } else {
+        localStorage.setItem("currentCount" , 0);
+    }
+}
 
 
-function setGameStart(){
+function setGameStart() {
     localStorage.setItem("gameIsStarted", true);
 }
 
-
-// function setLocalStorageTheLastQuestion(index) {
-//   localStorage.setItem("lastQuestion", JSON.stringify(perguntasTecnologicas[index]));
-// }
-
-// function setLocalStorageTheQuestionList(index) {
-//   localStorage.setItem("questionList", JSON.stringify(perguntasTecnologicas));
-// }
-// function setLocalStorageTheGameIsStarted() {
-//   localStorage.setItem("gameStatus", true);
-// }
-
-
-let fimJogo = false;
-let opcaoLeft = document.getElementById("text-first-option");
-let opcaoRight = document.getElementById("text-second-option");
-
-
-if(localStorage.getItem("gameIsStarted")){
-    do{
-        if(perguntasTecnologicas.length == 0){
-            fimJogo = true;
-        } else if(booleanEsquerda && booleanDireita){
-            const pergunta = listaPerguntas[0];
-            opcaoLeft.value = "";
-            opcaoRight.value = "";
-        }
-    }while(!fimJogo);
+//SETA A PERGUNTA ATUAL
+function setCurrentQuestion(perguntaSorteada) {
+    localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
-    
+
+

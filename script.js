@@ -203,8 +203,8 @@ if(localStorage.getItem("gameIsStarted")){
             fimJogo = true;
         } else if(booleanEsquerda && booleanDireita){
             const pergunta = listaPerguntas[0];
-            opcaoLeft.innerText(pergunta.opcoes[0].enunciado);
-            opcaoRight.innerText(pergunta.opcoes[1].enunciado);
+            opcaoLeft.value = pergunta.opcoes[0].enunciado;
+            opcaoRight.value = pergunta.opcoes[1].enunciado;
         }
     }while(!fimJogo);
 }

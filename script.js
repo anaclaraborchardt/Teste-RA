@@ -134,13 +134,13 @@ let listaPerguntas = [
 // const targetPergunta = document.getElementById("targetPergunta");
 const targetInicio = document.querySelector("#targetInicio");
 
-targetInicio.addEventListener("click", event => {
-    alert("teste");
-   setGameStart();
-   if(localStorage.getItem("gameIsStarted") == true){
-    targetInicio.classList.add('hidden');
-   }
-});
+// targetInicio.addEventListener("click", event => {
+//     alert("teste");
+//    setGameStart();
+//    if(localStorage.getItem("gameIsStarted") == true){
+//     targetInicio.classList.add('hidden');
+//    }
+// });
 
 
 

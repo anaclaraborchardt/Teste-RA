@@ -603,7 +603,7 @@ let listaPerguntas = [
 
 const sectionQuestion = document.querySelector("#section-question");
 
-const luckyBlock = document.querySelector('#lucky');
+const luckyBlock = document.querySelector('#luckyPlane');
 
 
 luckyBlock.addEventListener('click', () => {

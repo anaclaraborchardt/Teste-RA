@@ -615,7 +615,7 @@ luckyBlock.addEventListener('click', () => {
         setGameStart();
     }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
-    let numeroSorteado;
+    let numeroSorteado = 0;
     sorteiaNumero(() => {
         if (listaPerguntas.length > 0) {
             numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
@@ -658,14 +658,11 @@ function questionAnswer(optionSide) {
 }
 
 
-function setPointsLocalStorage(){
+function setPointsLocalStorage() {
     const currentCount = localStorage.getItem("currentCount");
-    if(currentCount != null){
-        localStorage.setItem("currentCount" , parseInt(currentCount)+1);
-    } else {
-        localStorage.setItem("currentCount" , 0);
-    }
-}
+    const newCount = currentCount != null ? parseInt(currentCount) + 1 : 0;
+    localStorage.setItem("currentCount", newCount);
+  }
 
 
 function setGameStart() {

@@ -619,7 +619,7 @@ luckyBlock.addEventListener('click', () => {
 
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const perguntaSorteada = listaPerguntas[numeroSorteado];
-
+    alert(perguntaSorteada);
     //temos que pegar essas referências
     const leftOption = document.querySelector("#left-option");
     const rightOption = document.querySelector("#right-option");

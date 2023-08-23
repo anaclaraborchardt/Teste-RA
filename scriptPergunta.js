@@ -8,8 +8,7 @@ document.querySelector("#left-option").innerHTML = currentQuestion.opcoes[0].enu
 document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].enunciado;
 
 function questionAnswer(optionSide) {
-    const currentQuestion = localStorage.getItem("currentQuestion");
-    if ((currentQuestion.opcoes[0].respostaCorreta && optionSide === "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide === "right")) {
+    if ((currentQuestion.opcoes[0].respostaCorreta && optionSide == "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide == "right")) {
         alert("acertou");
     } else {
         alert("Você errou!");

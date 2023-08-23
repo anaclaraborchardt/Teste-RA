@@ -599,7 +599,7 @@ let listaPerguntas = [
     }
 ]
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#section-question").classList.remove('hidden');
+    document.querySelector("#section-question").classList.add('hidden');
 });
 
 

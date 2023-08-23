@@ -606,24 +606,29 @@ const sectionQuestion = document.querySelector("#section-question");
 const luckyBlock = document.querySelector('#luckyPlane');
 
 
-luckyBlock.addEventListener('click', () => {
+luckyBlock.addEventListener('click', gameIsStarted);
    const gameIsStarted = localStorage.getItem("gameIsStarted");
-    alert('quiz')
-    //VERIFICA SE O JOGO JÁ COMEÇOU
+
+   function startGame() {
+    const gameIsStarted = localStorage.getItem("gameIsStarted");
+  
     if (gameIsStarted == null) {
-        //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
-        setGameStart();
+      setGameStart();
     }
+    // alert('quiz')
+    // //VERIFICA SE O JOGO JÁ COMEÇOU
+    // if (gameIsStarted == null) {
+    //     //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
+    //     setGameStart();
+    // }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
-    let numeroSorteado = 0;
-    sorteiaNumero(() => {
-        if (listaPerguntas.length > 0) {
-            numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
-        }
-    });
-    //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const listaPerguntas = [];
-    const perguntaSorteada = listaPerguntas[numeroSorteado];
+    let numeroSorteado = 0;
+        if (listaPerguntas.length > 0) {
+           const numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
+           const perguntaSorteada = listaPerguntas[numeroSorteado];
+        }
+    //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
 
     //temos que pegar essas referências
     const leftOption = document.querySelector("#left-option");
@@ -645,7 +650,8 @@ luckyBlock.addEventListener('click', () => {
     rightOption.append(spanDireita);
 
     setCurrentQuestion(perguntaSorteada);
-});
+}
+
 
 function questionAnswer(optionSide) {
     const currentQuestion = localStorage.getItem("currentQuestion");
@@ -672,6 +678,7 @@ function setPointsLocalStorage(){
 function setGameStart() {
     localStorage.setItem("gameIsStarted", true);
 }
+
 
 //SETA A PERGUNTA ATUAL
 function setCurrentQuestion(perguntaSorteada) {

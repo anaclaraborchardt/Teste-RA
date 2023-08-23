@@ -607,6 +607,7 @@ if (localStorage.getItem("currentScore") == null) {
 } else {
     score = localStorage.getItem("currentScore");
 }
+document.querySelector('#score').innerHTML = score;
 
 luckyBlock.addEventListener('click', () => {
     //SORTEIA O NÚMERO DE DENTRO DA LISTA

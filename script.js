@@ -607,13 +607,13 @@ const luckyBlock = document.querySelector('#luckyPlane');
 
 
 luckyBlock.addEventListener('click', () => {
-   // const gameIsStarted = localStorage.getItem("gameIsStarted");
+   const gameIsStarted = localStorage.getItem("gameIsStarted");
     alert('quiz')
     //VERIFICA SE O JOGO JÁ COMEÇOU
-    //if (gameIsStarted == null) {
+    if (gameIsStarted == null) {
         //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
-       // setGameStart();
-    //}
+        setGameStart();
+    }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = 0;
     sorteiaNumero(() => {
@@ -622,6 +622,7 @@ luckyBlock.addEventListener('click', () => {
         }
     });
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
+    const listaPerguntas = [];
     const perguntaSorteada = listaPerguntas[numeroSorteado];
 
     //temos que pegar essas referências

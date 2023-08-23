@@ -613,12 +613,10 @@ luckyBlock.addEventListener('click', () => {
     }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = 0;
-    alert(listaPerguntas.length);
     if (listaPerguntas.length > 0) {
-        alert(listaPerguntas.length + " tamanho lista");
         numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
     }
-    alert(numeroSorteado);
+
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const perguntaSorteada = listaPerguntas[numeroSorteado];
 
@@ -638,8 +636,8 @@ luckyBlock.addEventListener('click', () => {
     spanEsquerda.innerHTML = opcaoEsquerda;
     spanDireita.innerHTML = opcaoDireita;
 
-    leftOption.append(spanEsquerda);
-    rightOption.append(spanDireita);
+    leftOption.appendChild(spanEsquerda);
+    rightOption.appendChild(spanDireita);
 
     setCurrentQuestion(perguntaSorteada);
 });

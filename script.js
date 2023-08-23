@@ -677,9 +677,9 @@ function setCurrentQuestion(perguntaSorteada) {
     localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
 
-function sorteiaNumero(callback) {
-    
-    callback();
+//PRECISA DEFINIR A FUNÇÃO, POIS DIZIA QUE ESTAVA UNDEFINED
+function sorteiaNumero() {
+   
 }
 
 

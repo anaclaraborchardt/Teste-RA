@@ -34,21 +34,24 @@
 .question{
     display: flex;
     width: 100%;
-    height: 20%;
+    height: 30%;
     background-color: #f3f3f3;
     color: #092C4C;
 }
 .grid-options{
     display: grid;
     width: 100%;
-    height: 80%;
-    grid-template-columns: repeat(2, 1fr);
+    height: 70%;
+    background-color: #f3f3f3;
+    grid-template-rows: repeat(2, 1fr);
 }
 .grid-option{
     display: flex;
     flex-direction: column;
+    background-color: #f3f3f3;
+
     width: 100%;
-    height: 70%;
+    height: 50%;
 }
 
 

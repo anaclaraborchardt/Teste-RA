@@ -41,7 +41,8 @@
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane position="0 0 0" height="0.552" width="1" rotation="0 0 0" src="#lucky" class="clickable"
         id="luckyPlane"></a-plane>
-        <div class="central-section hidden" id="section-question">
+      <div class="hidden" id="section-question">
+        <div class="central-section">
           <!-- Pergunt -->
           <div class="question">
             pergunta
@@ -59,11 +60,12 @@
             <div class="grid-option">
               2
               <span id="right-option" onclick="questionAnswer('right')">
-              esquerda
-            </span>
+                esquerda
+              </span>
             </div>
           </div>
         </div>
+      </div>
     </a-entity>
   </a-scene>
 

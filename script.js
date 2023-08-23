@@ -599,7 +599,9 @@ let listaPerguntas = [
     }
 ]
 
-document.querySelector('#luckyPlane').addEventListener('click', () => {
+const luckyBlock = document.querySelector('#luckyPlane');
+
+luckyBlock.addEventListener('click', () => {
     alert('funcionou');
     const score = localStorage.getItem("currentScore");
     //VERIFICA SE O JOGO JÁ COMEÇOU

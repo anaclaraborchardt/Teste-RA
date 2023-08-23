@@ -602,17 +602,19 @@ let listaPerguntas = [
 const luckyBlock = document.querySelector('#luckyPlane');
 
 luckyBlock.addEventListener('click', () => {
-    //VERIFICA SE O JOGO JÁ COMEÇOU
-    if (localStorage.getItem("currentScore") == null) {
-        //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
-        localStorage.setItem("currentStore", 0);
-    }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     setCurrentQuestion(listaPerguntas[numeroSorteado]);
     window.location.href = './pergunta.html';
 });
+
+let score = 0;
+if (localStorage.getItem("currentScore") == null) {
+    localStorage.setItem("currentScore", 0);
+} else {
+    score = localStorage.getItem("currentScore");
+}
 
 function setPointsLocalStorage() {
     const currentCount = localStorage.getItem("currentCount");

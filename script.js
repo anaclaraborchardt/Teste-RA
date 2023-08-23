@@ -637,7 +637,7 @@ luckyBlock.addEventListener('click', () => {
     document.querySelector("#left-option").innerHTML = opcaoEsquerda;
     document.querySelector("#right-option").innerHTML = opcaoDireita;
 
-    document.querySelector('#camera').classList.add('hidden');
+    document.querySelector('#camera').classList.add('z-index');
     setCurrentQuestion(perguntaSorteada);
 });
 

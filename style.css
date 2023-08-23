@@ -3,6 +3,10 @@
     display: none;
 }
 
+.z-index{
+    z-index: 1;
+}
+
 
 /* INSTRUÇÕES */
 .aviso{

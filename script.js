@@ -633,6 +633,8 @@ luckyBlock.addEventListener('click', () => {
     // spanEsquerda.innerHTML = opcaoEsquerda;
     // spanDireita.innerHTML = opcaoDireita;
 
+    window.location.href = './pergunta.html';
+
     //temos que pegar essas referências
     document.querySelector("#left-option").innerHTML = opcaoEsquerda;
     document.querySelector("#right-option").innerHTML = opcaoDireita;

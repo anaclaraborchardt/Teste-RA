@@ -9,9 +9,9 @@ document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].en
 
 function questionAnswer(optionSide) {
     if ((currentQuestion.opcoes[0].respostaCorreta && optionSide == "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide == "right")) {
-        alert("acertou");
+        localStorage.setItem("currentScore", parseInt(localStorage.getItem("currentScore")+1));
     } else {
-        alert("Você errou!");
+        localStorage.setItem("currentScore", 0);
     }
     window.location.href = "./index.html"
 }

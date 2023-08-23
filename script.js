@@ -602,10 +602,8 @@ let listaPerguntas = [
 const luckyBlock = document.querySelector('#luckyPlane');
 
 luckyBlock.addEventListener('click', () => {
-    alert('funcionou');
-    const score = localStorage.getItem("currentScore");
     //VERIFICA SE O JOGO JÁ COMEÇOU
-    if (gameIsStarted == null) {
+    if (localStorage.getItem("currentScore") == null) {
         //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
         localStorage.setItem("currentStore", 0);
     }

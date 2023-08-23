@@ -4,8 +4,8 @@ const currentQuestion = JSON.parse(localStorage.getItem('currentQuestion'));
 document.querySelector("#section-question").classList.remove('hidden');
 //PRONTO< AGORA ela aparece na tela
 document.querySelector('#question-p').innerHTML = currentQuestion.pergunta;
-document.querySelector("#left-option").innerHTML = opcaoEsquerda;
-document.querySelector("#right-option").innerHTML = opcaoDireita;
+document.querySelector("#left-option").innerHTML = currentQuestion.opcoes[0].enunciado;
+document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].enunciado;
 
 function questionAnswer(optionSide) {
     const currentQuestion = localStorage.getItem("currentQuestion");

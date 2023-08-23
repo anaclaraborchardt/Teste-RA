@@ -601,6 +601,13 @@ let listaPerguntas = [
 
 const luckyBlock = document.querySelector('#luckyPlane');
 
+let score = 0;
+if (localStorage.getItem("currentScore") == null) {
+    localStorage.setItem("currentScore", 0);
+} else {
+    score = localStorage.getItem("currentScore");
+}
+
 luckyBlock.addEventListener('click', () => {
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
@@ -609,12 +616,6 @@ luckyBlock.addEventListener('click', () => {
     window.location.href = './pergunta.html';
 });
 
-let score = 0;
-if (localStorage.getItem("currentScore") == null) {
-    localStorage.setItem("currentScore", 0);
-} else {
-    score = localStorage.getItem("currentScore");
-}
 
 function setPointsLocalStorage() {
     const currentCount = localStorage.getItem("currentCount");

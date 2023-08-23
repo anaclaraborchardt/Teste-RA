@@ -607,13 +607,13 @@ const luckyBlock = document.querySelector('#luckyPlane');
 
 
 luckyBlock.addEventListener('click', () => {
-    const gameIsStarted = localStorage.getItem("gameIsStarted");
+   // const gameIsStarted = localStorage.getItem("gameIsStarted");
     alert('quiz')
     //VERIFICA SE O JOGO JÁ COMEÇOU
-    if (gameIsStarted == null) {
+    //if (gameIsStarted == null) {
         //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
-        setGameStart();
-    }
+       // setGameStart();
+    //}
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = 0;
     sorteiaNumero(() => {
@@ -658,11 +658,14 @@ function questionAnswer(optionSide) {
 }
 
 
-function setPointsLocalStorage() {
+function setPointsLocalStorage(){
     const currentCount = localStorage.getItem("currentCount");
-    const newCount = currentCount != null ? parseInt(currentCount) + 1 : 0;
-    localStorage.setItem("currentCount", newCount);
-  }
+    if(currentCount != null){
+        localStorage.setItem("currentCount" , parseInt(currentCount)+1);
+    } else {
+        localStorage.setItem("currentCount" , 0);
+    }
+}
 
 
 function setGameStart() {

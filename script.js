@@ -615,6 +615,7 @@ luckyBlock.addEventListener('click', () => {
     let numeroSorteado = 0;
     sorteiaNumero(() => {
         if (listaPerguntas.length > 0) {
+            alert(listaPerguntas.length + " tamanho lista");
             numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
         }
     });

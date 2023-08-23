@@ -607,7 +607,7 @@ const luckyBlock = document.querySelector('#luckyPlane');
 
 
 luckyBlock.addEventListener('click', () => {
-   // const gameIsStarted = localStorage.getItem("gameIsStarted");
+   const gameIsStarted = localStorage.getItem("gameIsStarted");
     alert('quiz')
     //VERIFICA SE O JOGO JÁ COMEÇOU
     if (gameIsStarted == null) {
@@ -676,5 +676,12 @@ function setGameStart() {
 function setCurrentQuestion(perguntaSorteada) {
     localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
+
+// Uncaught ReferenceError: gameIsStarted is not defined
+//     at a.<anonymous> (script.js:613:5)
+//     at a.emit (a-node.js:293:10)
+//     at n.twoWayEmit (cursor.js:502:19)
+//     at n.onCursorUp (cursor.js:337:12)
+//     at HTMLCanvasElement.<anonymous> (bind.js:12:17)
 
 

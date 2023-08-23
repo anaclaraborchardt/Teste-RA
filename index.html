@@ -23,29 +23,7 @@
     </div>
   </dialog> -->
 
-  <div class="central-section hidden" id="section-question">
-    <!-- Pergunt -->
-    <div class="question">
-      pergunta
-    </div>
-    <!-- Opcoes -->
-    <div class="grid-options">
-      <!-- Esquerda -->
-      <div class="grid-option">
-        1
-        <span id="left-option" onclick="questionAnswer('left')">
-          esquerda
-        </span>
-      </div>
-      <!-- Direita -->
-      <div class="grid-option">
-        2
-        <span id="right-option" onclick="questionAnswer('right')">
-        esquerda
-      </span>
-      </div>
-    </div>
-  </div>
+
 
 
   <a-scene mindar-image="imageTargetSrc: ./luckyblock.mind;" color-space="sRGB"
@@ -63,6 +41,29 @@
     <a-entity mindar-image-target="targetIndex: 0">
       <a-plane position="0 0 0" height="0.552" width="1" rotation="0 0 0" src="#lucky" class="clickable"
         id="luckyPlane"></a-plane>
+        <div class="central-section hidden" id="section-question">
+          <!-- Pergunt -->
+          <div class="question">
+            pergunta
+          </div>
+          <!-- Opcoes -->
+          <div class="grid-options">
+            <!-- Esquerda -->
+            <div class="grid-option">
+              1
+              <span id="left-option" onclick="questionAnswer('left')">
+                esquerda
+              </span>
+            </div>
+            <!-- Direita -->
+            <div class="grid-option">
+              2
+              <span id="right-option" onclick="questionAnswer('right')">
+              esquerda
+            </span>
+            </div>
+          </div>
+        </div>
     </a-entity>
   </a-scene>
 

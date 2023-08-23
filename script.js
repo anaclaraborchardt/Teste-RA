@@ -599,7 +599,6 @@ let listaPerguntas = [
     }
 ]
 
-const sectionQuestion = document.querySelector("#section-question");
 
 const luckyBlock = document.querySelector('#luckyPlane');
 
@@ -620,26 +619,23 @@ luckyBlock.addEventListener('click', () => {
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const perguntaSorteada = listaPerguntas[numeroSorteado];
     alert(JSON.stringify(perguntaSorteada));
-    //temos que pegar essas referências
-    const leftOption = document.querySelector("#left-option");
-    const rightOption = document.querySelector("#right-option");
 
     //PRIMEIRO, VAMOS TIRAR A CLASSE HIDDEN DA MAIN SECTION
-    sectionQuestion.classList.remove('hidden');
+    document.querySelector("#section-question").classList.remove('hidden');
     //PRONTO< AGORA ela aparece na tela
     const opcaoEsquerda = perguntaSorteada.opcoes[0].enunciado;
     alert(opcaoEsquerda);
     const opcaoDireita = perguntaSorteada.opcoes[1].enunciado;
     alert(opcaoDireita);
+    // let spanEsquerda = document.createElement('span');
+    // let spanDireita = document.createElement('span');
 
-    let spanEsquerda = document.createElement('span');
-    let spanDireita = document.createElement('span');
+    // spanEsquerda.innerHTML = opcaoEsquerda;
+    // spanDireita.innerHTML = opcaoDireita;
 
-    spanEsquerda.innerHTML = opcaoEsquerda;
-    spanDireita.innerHTML = opcaoDireita;
-
-    leftOption.appendChild(spanEsquerda);
-    rightOption.appendChild(spanDireita);
+    //temos que pegar essas referências
+    document.querySelector("#left-option").innerHTML = opcaoEsquerda;
+    document.querySelector("#right-option").innerHTML = opcaoDireita;
 
     setCurrentQuestion(perguntaSorteada);
 });

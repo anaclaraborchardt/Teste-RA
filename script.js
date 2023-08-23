@@ -599,16 +599,13 @@ let listaPerguntas = [
     }
 ]
 
-
-
 const sectionQuestion = document.querySelector("#section-question");
 
 const luckyBlock = document.querySelector('#luckyPlane');
 
 
 luckyBlock.addEventListener('click', () => {
-    const gameIsStarted = localStorage.getItem("gameIsStarted") !== null;
-    alert('quiz')
+    const gameIsStarted = localStorage.getItem("gameIsStarted") == null;
     //VERIFICA SE O JOGO JÁ COMEÇOU
     if (gameIsStarted == null) {
         //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
@@ -621,6 +618,7 @@ luckyBlock.addEventListener('click', () => {
             numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
         }
     });
+    alert(numeroSorteado);
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const perguntaSorteada = listaPerguntas[numeroSorteado];
 

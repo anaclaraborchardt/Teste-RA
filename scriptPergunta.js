@@ -9,7 +9,7 @@ document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].en
 
 function questionAnswer(optionSide) {
     if ((currentQuestion.opcoes[0].respostaCorreta && optionSide == "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide == "right")) {
-        localStorage.setItem("currentScore", parseInt(localStorage.getItem("currentScore")+1));
+        localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore"))+1));
     } else {
         localStorage.setItem("currentScore", 0);
     }

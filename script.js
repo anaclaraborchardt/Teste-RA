@@ -608,7 +608,6 @@ document.querySelector('#luckyPlane').addEventListener('click', () => {
     }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
-    
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     setCurrentQuestion(listaPerguntas[numeroSorteado]);
     window.location.href = './pergunta.html';

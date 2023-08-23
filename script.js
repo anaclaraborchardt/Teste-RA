@@ -613,7 +613,9 @@ luckyBlock.addEventListener('click', () => {
     }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = 0;
+    alert(listaPerguntas.length);
     sorteiaNumero(() => {
+        alert('entrei');
         if (listaPerguntas.length > 0) {
             alert(listaPerguntas.length + " tamanho lista");
             numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);

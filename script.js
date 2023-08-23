@@ -620,26 +620,12 @@ luckyBlock.addEventListener('click', () => {
     const perguntaSorteada = listaPerguntas[numeroSorteado];
     alert(JSON.stringify(perguntaSorteada));
 
-    //PRIMEIRO, VAMOS TIRAR A CLASSE HIDDEN DA MAIN SECTION
-    document.querySelector("#section-question").classList.remove('hidden');
-    //PRONTO< AGORA ela aparece na tela
-    const opcaoEsquerda = perguntaSorteada.opcoes[0].enunciado;
-    alert(opcaoEsquerda);
-    const opcaoDireita = perguntaSorteada.opcoes[1].enunciado;
-    alert(opcaoDireita);
-    // let spanEsquerda = document.createElement('span');
-    // let spanDireita = document.createElement('span');
 
-    // spanEsquerda.innerHTML = opcaoEsquerda;
-    // spanDireita.innerHTML = opcaoDireita;
+
 
     window.location.href = './pergunta.html';
 
-    //temos que pegar essas referências
-    document.querySelector("#left-option").innerHTML = opcaoEsquerda;
-    document.querySelector("#right-option").innerHTML = opcaoDireita;
 
-    document.querySelector('#scan').classList.add('hidden');
     setCurrentQuestion(perguntaSorteada);
 });
 

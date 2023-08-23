@@ -614,13 +614,10 @@ luckyBlock.addEventListener('click', () => {
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = 0;
     alert(listaPerguntas.length);
-    sorteiaNumero(() => {
-        alert('entrei');
-        if (listaPerguntas.length > 0) {
-            alert(listaPerguntas.length + " tamanho lista");
-            numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
-        }
-    });
+    if (listaPerguntas.length > 0) {
+        alert(listaPerguntas.length + " tamanho lista");
+        numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
+    }
     alert(numeroSorteado);
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     const perguntaSorteada = listaPerguntas[numeroSorteado];
@@ -659,12 +656,12 @@ function questionAnswer(optionSide) {
 }
 
 
-function setPointsLocalStorage(){
+function setPointsLocalStorage() {
     const currentCount = localStorage.getItem("currentCount");
-    if(currentCount != null){
-        localStorage.setItem("currentCount" , parseInt(currentCount)+1);
+    if (currentCount != null) {
+        localStorage.setItem("currentCount", parseInt(currentCount) + 1);
     } else {
-        localStorage.setItem("currentCount" , 0);
+        localStorage.setItem("currentCount", 0);
     }
 }
 
@@ -680,7 +677,7 @@ function setCurrentQuestion(perguntaSorteada) {
 
 //PRECISA DEFINIR A FUNÇÃO, POIS DIZIA QUE ESTAVA UNDEFINED
 function sorteiaNumero() {
-   
+
 }
 
 

@@ -598,6 +598,10 @@ let listaPerguntas = [
         ]
     }
 ]
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#section-question").classList.remove('hidden');
+});
+
 
 
 const luckyBlock = document.querySelector('#luckyPlane');

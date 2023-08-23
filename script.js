@@ -629,16 +629,7 @@ luckyBlock.addEventListener('click', () => {
     setCurrentQuestion(perguntaSorteada);
 });
 
-function questionAnswer(optionSide) {
-    const currentQuestion = localStorage.getItem("currentQuestion");
-    if ((currentQuestion.opcoes[0].respostaCorreta && optionSide === "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide === "right")) {
-        setPointsLocalStorage();
-    } else {
-        localStorage.setItem("points", 0);
-        alert("Você errou!");
-    }
-    sectionQuestion.classList.add("hidden");
-}
+
 
 
 function setPointsLocalStorage() {
@@ -659,26 +650,5 @@ function setGameStart() {
 function setCurrentQuestion(perguntaSorteada) {
     localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
-
-//PRECISA DEFINIR A FUNÇÃO, POIS DIZIA QUE ESTAVA UNDEFINED
-function sorteiaNumero() {
-
-}
-
-
-//SETADO COMO !== NULL PARA CORRIGIR ESSE ERRO
-// Uncaught ReferenceError: gameIsStarted is not defined
-//     at a.<anonymous> (script.js:613:5)
-//     at a.emit (a-node.js:293:10)
-//     at n.twoWayEmit (cursor.js:502:19)
-//     at n.onCursorUp (cursor.js:337:12)
-//     at HTMLCanvasElement.<anonymous> (bind.js:12:17)
-
-// script.js:619 Uncaught ReferenceError: sorteiaNumero is not defined
-//     at a.<anonymous> (script.js:619:5)
-//     at a.emit (a-node.js:293:10)
-//     at n.twoWayEmit (cursor.js:502:19)
-//     at n.onCursorUp (cursor.js:337:12)
-//     at HTMLCanvasElement.<anonymous> (bind.js:12:17)
 
 

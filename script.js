@@ -628,7 +628,9 @@ luckyBlock.addEventListener('click', () => {
     sectionQuestion.classList.remove('hidden');
     //PRONTO< AGORA ela aparece na tela
     const opcaoEsquerda = perguntaSorteada.opcoes[0].enunciado;
+    alert(opcaoEsquerda);
     const opcaoDireita = perguntaSorteada.opcoes[1].enunciado;
+    alert(opcaoDireita);
 
     let spanEsquerda = document.createElement('span');
     let spanDireita = document.createElement('span');

@@ -614,7 +614,7 @@ luckyBlock.addEventListener('click', () => {
     let numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
     setCurrentQuestion(listaPerguntas[numeroSorteado]);
-    window.location.href = './pergunta.html';
+    window.location.href = '../pergunta/pergunta.html';
 });
 
 

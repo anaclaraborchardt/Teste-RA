@@ -13,5 +13,5 @@ function questionAnswer(optionSide) {
     } else {
         localStorage.setItem("currentScore", 0);
     }
-    window.location.href = "./index.html"
+    window.location.href = "../camera/index.html"
 }

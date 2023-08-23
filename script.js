@@ -606,7 +606,7 @@ const sectionQuestion = document.querySelector("#section-question");
 const luckyBlock = document.querySelector('#luckyPlane');
 
 
-luckyBlock.addEventListener('click', gameIsStarted);
+luckyBlock.addEventListener('click', startGame);
    const gameIsStarted = localStorage.getItem("gameIsStarted");
 
    function startGame() {
@@ -627,7 +627,6 @@ luckyBlock.addEventListener('click', gameIsStarted);
         if (listaPerguntas.length > 0) {
            const numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
            const perguntaSorteada = listaPerguntas[numeroSorteado];
-        }
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
 
     //temos que pegar essas referências
@@ -651,6 +650,7 @@ luckyBlock.addEventListener('click', gameIsStarted);
 
     setCurrentQuestion(perguntaSorteada);
 }
+   }
 
 
 function questionAnswer(optionSide) {

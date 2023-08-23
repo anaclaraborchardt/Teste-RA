@@ -606,28 +606,23 @@ const sectionQuestion = document.querySelector("#section-question");
 const luckyBlock = document.querySelector('#luckyPlane');
 
 
-luckyBlock.addEventListener('click', startGame);
-   const gameIsStarted = localStorage.getItem("gameIsStarted");
-
-   function startGame() {
-    const gameIsStarted = localStorage.getItem("gameIsStarted");
-  
+luckyBlock.addEventListener('click', () => {
+   // const gameIsStarted = localStorage.getItem("gameIsStarted");
+    alert('quiz')
+    //VERIFICA SE O JOGO JÁ COMEÇOU
     if (gameIsStarted == null) {
-      setGameStart();
+        //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
+        setGameStart();
     }
-    // alert('quiz')
-    // //VERIFICA SE O JOGO JÁ COMEÇOU
-    // if (gameIsStarted == null) {
-    //     //CASO NÃO, ELE SETA QUE O JOGO COMEÇOU
-    //     setGameStart();
-    // }
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
-    const listaPerguntas = [];
     let numeroSorteado = 0;
+    sorteiaNumero(() => {
         if (listaPerguntas.length > 0) {
-           const numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
-           const perguntaSorteada = listaPerguntas[numeroSorteado];
+            numeroSorteado = Math.floor(Math.random() * listaPerguntas.length);
+        }
+    });
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO
+    const perguntaSorteada = listaPerguntas[numeroSorteado];
 
     //temos que pegar essas referências
     const leftOption = document.querySelector("#left-option");
@@ -649,9 +644,7 @@ luckyBlock.addEventListener('click', startGame);
     rightOption.append(spanDireita);
 
     setCurrentQuestion(perguntaSorteada);
-}
-   }
-
+});
 
 function questionAnswer(optionSide) {
     const currentQuestion = localStorage.getItem("currentQuestion");
@@ -678,7 +671,6 @@ function setPointsLocalStorage(){
 function setGameStart() {
     localStorage.setItem("gameIsStarted", true);
 }
-
 
 //SETA A PERGUNTA ATUAL
 function setCurrentQuestion(perguntaSorteada) {

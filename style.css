@@ -3,9 +3,7 @@
     display: none;
 }
 
-.z-index{
-    z-index: 1;
-}
+
 
 
 /* INSTRUÇÕES */
@@ -35,6 +33,7 @@
     height: 100vh;
     justify-content: center;
     flex-direction: column;
+    z-index: 999;
 }
 .question{
     display: flex;

@@ -4,13 +4,18 @@ const currentQuestion = JSON.parse(localStorage.getItem('currentQuestion'));
 document.querySelector("#section-question").classList.remove('hidden');
 //PRONTO< AGORA ela aparece na tela
 document.querySelector('#question-p').innerHTML = currentQuestion.pergunta;
-document.querySelector("#left-option").innerHTML = currentQuestion.opcoes[0].enunciado;
-document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].enunciado;
+
+const randomNumberLeft = Math.floor(Math.random() * 2);
+const randomNumberRight = randomNumberLeft == 1 ? 0 : 1;
+document.querySelector("#left-option").innerHTML = currentQuestion.opcoes[randomNumberLeft].enunciado;
+document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[randomNumberRight].enunciado;
+
 
 function questionAnswer(optionSide) {
-    if ((currentQuestion.opcoes[0].respostaCorreta && optionSide == "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide == "right")) {
+    if ((currentQuestion.opcoes[randomNumberLeft].respostaCorreta && optionSide == "left") || 
+    (currentQuestion.opcoes[randomNumberRight].respostaCorreta && optionSide == "right")) {
         alert('Parabéns, você acertou!')
-        localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore"))+1));
+        localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore")) + 1));
     } else {
         localStorage.setItem("currentScore", 0);
         alert("Você acabou errando, mas siga em frente nas próximas perguntas!");

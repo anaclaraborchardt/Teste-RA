@@ -1,3 +1,8 @@
+if(localStorage.getItem('currentQuestion') == null){
+    window.location.href = "../camera/index.html";
+}
+
+
 const currentQuestion = JSON.parse(localStorage.getItem('currentQuestion'));
 
 //PRIMEIRO, VAMOS TIRAR A CLASSE HIDDEN DA MAIN SECTION
@@ -18,7 +23,8 @@ function questionAnswer(optionSide) {
         localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore")) + 1));
         window.location.href = "../camera/index.html"
     } else {
-        alert('Você errou, clique ok para voltar para o menu inicial!');
+        alert(
+            'Você errou, clique ok para voltar para o menu inicial!');
         window.location.href = "../menuInicial/menuInicial.html"
     }
 }

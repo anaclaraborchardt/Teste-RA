@@ -1553,6 +1553,23 @@ if(localStorage.getItem("choiceList") == null){
   window.location.href = '../menuInicial/menuInicial.html';
 }
 
+let listaSelecionada = [];
+let kind = "";
+const numberListSelected = localStorage.getItem("choiceList");
+if(numberListSelected == 1){
+    listaSelecionada = listaPerguntasGames;
+    kind = "Games";
+} else if(numberListSelected == 2){
+    listaSelecionada = listaPerguntasEsporte; 
+    kind = "Esporte";
+} else if(numberListSelected == 3){
+    listaSelecionada = listaPerguntasMusica; 
+    kind = "Música";
+} else if(numberListSelected == 4){
+    listaSelecionada = listaPerguntasTI;
+    kind = "TI";
+}
+
 
 const luckyBlock = document.querySelector('#luckyPlane');
 
@@ -1561,21 +1578,12 @@ if (localStorage.getItem("currentScore") == null) {
     localStorage.setItem("currentScore", 0);
 } else {
     score = localStorage.getItem("currentScore");
-}
-document.querySelector('#score').innerHTML = score;
+  }
+  document.querySelector('#score').innerHTML = score;
+  document.querySelector('#kind').innerHTML = kind;
 
 luckyBlock.addEventListener('click', () => {
-    let listaSelecionada = [];
-    const numberListSelected = localStorage.getItem("choiceList");
-    if(numberListSelected == 1){
-        listaSelecionada = listaPerguntasGames;
-    } else if(numberListSelected == 2){
-        listaSelecionada = listaPerguntasEsporte; 
-    } else if(numberListSelected == 3){
-        listaSelecionada = listaPerguntasMusica; 
-    } else if(numberListSelected == 4){
-        listaSelecionada = listaPerguntasTI;
-    }
+
     //SORTEIA O NÚMERO DE DENTRO DA LISTA
     let numeroSorteado = Math.floor(Math.random() * listaSelecionada.length);
     //SELECIONA A PERGUNTA DE ACORDO COM O SORTEIO

@@ -1,3 +1,4 @@
+
 //lista de perguntas TI
 let listaPerguntasTI = [
     {
@@ -1277,10 +1278,6 @@ let listaPerguntasMusica = [
           respostaCorreta: false
         },
         {
-          enunciado: "Indie",
-          respostaCorreta: false
-        },
-        {
           enunciado: "Emo",
           respostaCorreta: true
         }
@@ -1412,10 +1409,6 @@ let listaPerguntasGames = [
       opcoes: [
         {
           enunciado: "Dark Souls",
-          respostaCorreta: false
-        },
-        {
-          enunciado: "The Witcher",
           respostaCorreta: false
         },
         {
@@ -1555,7 +1548,12 @@ let listaPerguntasGames = [
       ]
     }
 ];
-  
+
+if(localStorage.getItem("choiceList") == null){
+  window.location.href = '../menuInicial/menuInicial.html';
+}
+
+
 const luckyBlock = document.querySelector('#luckyPlane');
 
 let score = 0;
@@ -1599,6 +1597,7 @@ function setPointsLocalStorage() {
 function setCurrentQuestion(perguntaSorteada) {
     localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
+
 
 
 

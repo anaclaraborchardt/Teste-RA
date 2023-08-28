@@ -16,9 +16,9 @@ function questionAnswer(optionSide) {
     (currentQuestion.opcoes[randomNumberRight].respostaCorreta && optionSide == "right")) {
         alert('Parabéns, você acertou!')
         localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore")) + 1));
+        window.location.href = "../camera/index.html"
     } else {
-        localStorage.setItem("currentScore", 0);
-        alert("Você acabou errando, mas siga em frente nas próximas perguntas!");
+        alert('Você errou, clique ok para voltar para o menu inicial!');
+        window.location.href = "../menuIncial/menuInicial.html"
     }
-    window.location.href = "../camera/index.html"
 }

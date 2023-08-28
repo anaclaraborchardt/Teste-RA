@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Inicial</title>
+    <link rel="stylesheet" href="../menuInicial/menuInicial.css">
+</head>
+
+<body>
+    
+
+    <section id="sectionChoices">
+        <div id="h1Menu">
+            <h1>Escolha o gênero do Quiz que você deseja:</h1>
+        </div>
+
+        <!-- GAMES -->
+        <div class="cardQuiz">
+            <a onclick="questionListSelected(1)"><img src="" alt=""></a>
+        </div>
+        <!-- ESPORTES -->
+        <div class="cardQuiz">
+            <a onclick="questionListSelected(2)"><img src="" alt=""></a>
+        </div>
+        <!-- MÚSICAS -->
+        <div class="cardQuiz">
+            <a onclick="questionListSelected(3)"><img src="" alt=""></a>
+        </div>
+        <!-- TI -->
+        <div class="cardQuiz">
+            <a onclick="questionListSelected(4)"><img src="" alt=""></a>
+        </div>
+
+    </section>
+
+
+    <script>
+        function questionListSelected(indexList) {
+            localStorage.setItem("choiceList", indexList);
+        }
+    </script>
+</body>
+
+</html>

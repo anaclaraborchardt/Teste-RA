@@ -1601,8 +1601,9 @@ function setCurrentQuestion(perguntaSorteada) {
 }
 
 function backAndReset(){
-    localStorage.clear();
-    window.location.href = "../menuInicial/menuInicial.html";
+    console.log("teste");
+    // localStorage.clear();
+    // window.location.href = "../menuInicial/menuInicial.html";
 }
 
 

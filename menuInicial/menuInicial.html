@@ -17,41 +17,50 @@
             <h1>Escolha o gênero do Quiz que você deseja:</h1>
         </div>
 
-        <h3>GAMES</h3>
-        <!-- GAMES -->
-        <div class="cardQuiz">
-            <a onclick="questionListSelected(1)"><img
-                    src="https://img.freepik.com/fotos-premium/ilustracao-do-joystick-do-gamepad-do-controlador-de-jogos-cyberpunk_691560-5812.jpg"
-                    alt=""></a>
+        <div class="divSup"> 
+            <h3>GAMES</h3>
+            <!-- GAMES -->
+            <div class="cardQuiz">
+                <a onclick="questionListSelected(1)"><img
+                        src="https://img.freepik.com/fotos-premium/ilustracao-do-joystick-do-gamepad-do-controlador-de-jogos-cyberpunk_691560-5812.jpg"
+                        alt=""></a>
+            </div>
         </div>
 
-        <h3>ESPORTES</h3>
-        <!-- ESPORTES -->
-        <div class="cardQuiz">
-            <a onclick="questionListSelected(2)"><img
-                    src="https://www.mktesportivo.com/wp-content/uploads/2023/04/esportes-amazon-1.jpg"
-                    alt=""></a>
+        <div class="divSup">
+            <h3>ESPORTES</h3>
+            <!-- ESPORTES -->
+            <div class="cardQuiz">
+                <a onclick="questionListSelected(2)"><img
+                        src="https://www.mktesportivo.com/wp-content/uploads/2023/04/esportes-amazon-1.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="divSup">
+            <h3>MÚSICAS</h3>
+            <!-- MÚSICAS -->
+            <div class="cardQuiz">
+                <a onclick="questionListSelected(3)"><img
+                        src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80"
+                        alt=""></a>
+            </div>
         </div>
 
-        <h3>MÚSICAS</h3>
-        <!-- MÚSICAS -->
-        <div class="cardQuiz">
-            <a onclick="questionListSelected(3)"><img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" alt=""></a>
-        </div>
-
-        <h3>TECNOLOGIA</h3>
-        <!-- TI -->
-        <div class="cardQuiz">
-            <a onclick="questionListSelected(4)"><img src="" alt=""></a>
+        <div class="divSup">
+            <h3>TECNOLOGIA</h3>
+            <!-- TI -->
+            <div class="cardQuiz">
+                <a onclick="questionListSelected(4)"><img src="https://t2.tudocdn.net/224136?w=1920" alt=""></a>
+            </div>
         </div>
 
     </section>
 
 
     <script>
-        if (localStorage.getItem("choiceList") != null) {
-            goScan();
-        }
+        // if (localStorage.getItem("choiceList") != null) {
+        //     console.log("go scan")
+        //     goScan();
+        // }
 
         function questionListSelected(indexList) {
             localStorage.setItem("choiceList", indexList);

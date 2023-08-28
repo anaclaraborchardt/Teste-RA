@@ -19,12 +19,15 @@ document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[rando
 function questionAnswer(optionSide) {
     if ((currentQuestion.opcoes[randomNumberLeft].respostaCorreta && optionSide == "left") || 
     (currentQuestion.opcoes[randomNumberRight].respostaCorreta && optionSide == "right")) {
-        alert('Parabéns, você acertou!')
+        
+        alert(" CONGRATULATIONS!!! "  +"\n"
+        +"\n"+ 'Parabéns, você acertou!');
         localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore")) + 1));
         window.location.href = "../camera/index.html"
     } else {
-        alert(
-            'Você errou, clique ok para voltar para o menu inicial!');
+        alert(" ERROR "  +"\n"
+        +"\n"
+        +"'Você errou, clique ok para voltar para o menu inicial!" +"\n");
         window.location.href = "../menuInicial/menuInicial.html"
     }
 }

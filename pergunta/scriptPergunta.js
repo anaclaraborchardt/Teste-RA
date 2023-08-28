@@ -21,7 +21,7 @@ function questionAnswer(optionSide) {
     (currentQuestion.opcoes[randomNumberRight].respostaCorreta && optionSide == "right")) {
         
         alert(" CONGRATULATIONS!!! "  +"\n"
-        +"\n"+ 'Parabéns, você acertou!');
+        +"\n"+ 'você acertou!');
         localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore")) + 1));
         window.location.href = "../camera/index.html"
     } else {

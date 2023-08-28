@@ -19,6 +19,6 @@ function questionAnswer(optionSide) {
         window.location.href = "../camera/index.html"
     } else {
         alert('Você errou, clique ok para voltar para o menu inicial!');
-        window.location.href = "../menuIncial/menuInicial.html"
+        window.location.href = "../menuInicial/menuInicial.html"
     }
 }

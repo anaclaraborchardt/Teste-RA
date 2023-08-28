@@ -9,9 +9,11 @@ document.querySelector("#right-option").innerHTML = currentQuestion.opcoes[1].en
 
 function questionAnswer(optionSide) {
     if ((currentQuestion.opcoes[0].respostaCorreta && optionSide == "left") || (currentQuestion.opcoes[1].respostaCorreta && optionSide == "right")) {
+        alert('Parabéns, você acertou!')
         localStorage.setItem("currentScore", parseInt(JSON.parse(localStorage.getItem("currentScore"))+1));
     } else {
         localStorage.setItem("currentScore", 0);
+        alert("Você acabou errando, mas siga em frente nas próximas perguntas!");
     }
     window.location.href = "../camera/index.html"
 }

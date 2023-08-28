@@ -132,19 +132,6 @@ let listaPerguntasTI = [
         ]
     },
     {
-        pergunta: "Qual protocolo é usado para transferência segura de arquivos?",
-        opcoes: [
-            {
-                enunciado: "FTP",
-                respostaCorreta: false
-            },
-            {
-                enunciado: "SFTP",
-                respostaCorreta: true
-            }
-        ]
-    },
-    {
         pergunta: "Qual é a linguagem de programação usada para desenvolvimento de apps iOS?",
         opcoes: [
             {

@@ -1,1 +1,1 @@
-teste-ra-awt2.vercel.app/camera/index.html
+teste-ra-awt2.vercel.app/menuInicial/menuInicial.html

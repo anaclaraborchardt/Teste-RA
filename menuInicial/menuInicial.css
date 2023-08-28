@@ -20,6 +20,7 @@
     background-color: #092C4C;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 

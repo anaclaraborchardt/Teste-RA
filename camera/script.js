@@ -1600,10 +1600,5 @@ function setCurrentQuestion(perguntaSorteada) {
     localStorage.setItem("currentQuestion", JSON.stringify(perguntaSorteada));
 }
 
-function backAndReset(){
-    console.log("teste");
-    // localStorage.clear();
-    // window.location.href = "../menuInicial/menuInicial.html";
-}
 
 
